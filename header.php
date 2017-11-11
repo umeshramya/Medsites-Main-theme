@@ -25,7 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'medsites' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<nav id='menu' class='navabar navbar-expand-md navbar-light' role='navigation'>
+		<nav id='menu' class='navbar navbar-expand-md navbar-light' role='navigation'>
 
 		<div class="site-branding navbar-brand">
 			<?php
@@ -45,7 +45,7 @@
 		</div><!-- .site-branding -->
 
 		<button class='navbar-toggler navbar-toggler-right' type='button' data-toggle='collapse' 
-		data-target='#bs4navbar' aria-controll='#bs4navbar' aria-expanded='false' aria-label='Toggel navigation'>
+		data-target='#bs4navbar' aria-controll='bs4navbar' aria-expanded='false' aria-label='Toggle navigation'>
 		<span class='navbar-toggler-icon'></span>
 		</button>
 		<?php
@@ -61,7 +61,6 @@
 			'fallback_cb'		=> 'bs4navwalker::fallback',
 			'walker'			=> new bs4navwalker()
 		]);
-
 
 		?>
 		</nav>

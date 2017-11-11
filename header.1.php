@@ -24,7 +24,7 @@
 <div id="page" class="site container">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'medsites' ); ?></a>
 
-	<header id="masthead" class="site-header fixed-top">
+	<header id="masthead" class="site-header">
 		<nav id='menu' class='navbar navbar-expand-md navbar-light' role='navigation'>
 		
 		<div class="site-branding navbar-brand">
@@ -46,7 +46,7 @@
 
 		<button class='navbar-toggler navbar-toggler-right' type='button' data-toggle='collapse' 
 		
-		data-target='#bs4navbar' aria-control='bs4navbar' aria-expanded='false' aria-label='Toggle navigation'>
+		data-target='#bs4navbar' aria-controll='bs4navbar' aria-expanded='false' aria-label='Toggle navigation'>
 		<span class='navbar-toggler-icon'></span>
 		</button>
 		<?php
@@ -59,8 +59,8 @@
 			'manu_id'			=> 'main-menu',
 			'menu_class'		=> 'navbar-nav ml-auto',
 			'depth'				=> 2,
-            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-            'walker'            => new WP_Bootstrap_Navwalker()
+			'fallback_cb'		=> 'bs4navwalker::fallback',
+			'walker'			=> new bs4navwalker()
 		]);
 
 		?>

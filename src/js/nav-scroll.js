@@ -14,9 +14,9 @@ jQuery('document').ready(function($){
 
     });
 
-    $('.top').click(function(e){
-        e.preventDefault();
-        $('html. body').animate({scrollTop: 0}, 400);
+    $('.top').click(function(event){
+        // event.preventDefault();
+        $('html body').animate({scrollTop: 0}, 40);
 
     });
 
